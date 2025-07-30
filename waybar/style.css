@@ -2,91 +2,123 @@
 @define-color border #ebdbb2;
 
 * { 
-    border: none; 
-    font-family: JetBrainsMono Nerd Font Mono; 
-    font-size: 14px;
-    font-weight: bold;
-    background: @background;
-    color: @border;
+  border: none; 
+  font-family: JetBrainsMono Nerd Font Mono; 
+  font-size: 14px;
+  font-weight: bold;
+  /*background: @background;*/
+  color: @border;
 }
 
 window#waybar {
   background: @background;
-  border: 2px solid @border;
-  border-radius: 0px;
+  /*border: 2px solid @border;*/
 }
-
-/*
-#custom-power {
-	border: 2px solid #81a1c1;
-	border-radius: 4px;
-
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	
-	margin-top: 5px;
-	margin-bottom: 5px;
-	margin-left: 5px;
-	margin-right: 5px;
-
-	background: #2e3440;
-
-	transition: background 0.3s ease, transform 0.2s ease;
-}
-
-
-#custom-power:hover {
-	background: @background;
-}
-
-
-menu {
-	border: 2px solid #81a1c1;
-	background: white;
-	font-weight: bold;
-}
-
-*/
 
 #clock {
-	border: 2px solid @border;
-	border-radius: 0px;
-	
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	
-	margin-top: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	margin-right: 0px;
-
-	background: @background;
-
-	transition: background 0.3s ease, transform 0.2s ease;
+  /*border: 2px solid @border;*/	
+  padding-left: 10px;
+  padding-right: 5px;
+  background: @background;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 #clock:hover {
-	background: @background;
+  background: @background;
+}
+
+#network {
+  /* border: 2px solid @border; */
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-left: 4px;
 }
 
 #workspaces {
-	border: 2px solid @border;
-	border-radius: 0px;
+  /* border: 2px solid @border; */
 }
 
-#workspaces button:hover {
-	background: pink;
+#workspaces button.active {
+  background: #696459;
+  border-radius: 10px;
 }
+
+
+/*
+#workspaces button:hover {
+  background: pink;
+}
+*/
+
+#pulseaudio {
+  padding-right: 10px;
+  padding-left: 0px;
+}
+
+#battery {
+  padding-right: 10px;
+}
+
+#backlight {
+  padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#backlight-slider trough {
+  min-height: 5px;
+  min-width: 95px;
+}
+
+#backlight-slider highlight {
+  min-width: 10px;
+  background-color: @border;
+}
+
+#custom-battery {
+  /*border: 2px solid @border;*/
+  padding-left: 50px;
+}
+
+
+/*
+#custom-battery.full {
+  color: green;
+}
+*/
+
+
+#pulseaudio-slider trough {
+  min-height: 5px;
+  min-width: 95px;
+}
+
+#pulseaudio-slider highlight {
+  min-width: 10px;
+  background-color: @border;
+}
+
+
+
+
+
+
+
 
 /*
 #custom-spotify {
 	border: 2px solid #81a1c1;
 	border-radius: 4px;
-
 	padding-left: 5px;
 	padding-right: 5px;
 	padding-top: 5px;
@@ -117,6 +149,40 @@ menu {
 
 	background: #2e3440;
 }
+*/
 
+
+
+
+/*
+#custom-power {
+	border: 2px solid #81a1c1;
+	border-radius: 4px;
+
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+
+	background: #2e3440;
+
+	transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#custom-power:hover {
+	background: @background;
+}
+
+menu {
+	border: 2px solid #81a1c1;
+	background: white;
+	font-weight: bold;
+}
 
 */
+
